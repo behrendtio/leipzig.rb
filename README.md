@@ -6,15 +6,21 @@ Tiny client for [API Leipzig](http://www.apileipzig.de)
 
 Add this line to your application's Gemfile:
 
-    gem 'leipzig'
+```bash
+gem 'leipzig'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install leipzig
+```bash
+$ gem install leipzig
+```
 
 ## Usage
 
@@ -26,9 +32,10 @@ require 'leipzig'
 key = 'my-key'
 
 client = Leipzig::Client.new(key)
+
 companies = client.find_companies(:postcode => '04103')
-branches = client.find_branches(:postcode => '04103')
-people = client.find_people(:postcode => '04103')
+branches  = client.find_branches(:limit => 5)
+people    = client.find_people(:offset => 100)
 ```
 
 All `find` methods except a hash of params which are used to change the result set. See [this link](http://www.apileipzig.de/wiki/show/allgemeineParameter) for more
