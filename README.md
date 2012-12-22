@@ -29,9 +29,7 @@ Simply create a new instance of the client using your api key and call one of th
 ```ruby
 require 'leipzig'
 
-key = 'my-key'
-
-client = Leipzig::Mediahandbook.new(key)
+client = Leipzig::Mediahandbook.new('my-key')
 
 companies = client.find_companies(:postcode => '04103')
 branches  = client.find_branches(:limit => 5)
@@ -66,7 +64,6 @@ $ API_KEY='my-key' rake
 ## Todo
 
 * Refactoring
-* Doc blocks
 * Maybe model layer instead of OpenStruct?
 
 ## License
