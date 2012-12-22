@@ -62,6 +62,12 @@ $ API_KEY='my-key' rake
 6. Push to the branch
 7. Create new Pull Request
 
+## Todo
+
+* Support for whole API and all available resources
+* Refactoring
+* Maybe model layer instead of OpenStruct?
+
 ## License
 
 (The MIT License)
