@@ -1,10 +1,10 @@
-require 'leipzig/client'
+require 'leipzig/mediahandbook'
 
 KEY = ENV['API_KEY']
 LIMIT = 5
 
-describe 'Client' do
-  let(:client) { Leipzig::Client.new(KEY) }
+describe 'Mediahandbook' do
+  let(:client) { Leipzig::Mediahandbook.new(KEY) }
 
   it 'returns given API key' do
     client.api_key.should eq(KEY)
@@ -29,7 +29,7 @@ describe 'Client' do
   end
 
   it 'raises exception if invalid key is used' do
-    lambda { Leipzig::Client.new('wrong').find_companies }.should raise_error
+    lambda { Leipzig::Mediahandbook.new('wrong').find_companies }.should raise_error
   end
 
   it 'raises exception if undefined method is called' do

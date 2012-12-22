@@ -31,7 +31,7 @@ require 'leipzig'
 
 key = 'my-key'
 
-client = Leipzig::Client.new(key)
+client = Leipzig::Mediahandbook.new(key)
 
 companies = client.find_companies(:postcode => '04103')
 branches  = client.find_branches(:limit => 5)
@@ -40,6 +40,13 @@ people    = client.find_people(:offset => 100)
 
 All `find` methods except a hash of params which are used to change the result set. See [this link](http://www.apileipzig.de/wiki/show/allgemeineParameter) for more
 information about available params.
+
+The result set is always an array containing OpenStruct objects so one can access entry data like properties:
+
+```ruby
+client.find_companies(:limit => 10).first.name
+# ==> First company's name
+```
 
 ## Note
 
