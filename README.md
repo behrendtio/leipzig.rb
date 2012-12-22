@@ -48,9 +48,13 @@ client.find_companies(:limit => 10).first.name
 # ==> First company's name
 ```
 
-## Note
+Besides `Mediahandbook` there are also classes for `District` and `Calendar` which are used the same way. Again, see
+link above for more information about params and structures. Calls could look as follows:
 
-At the moment only the mediahandbook entries are supported.
+```ruby
+Leipzig::Calendar.new(key).find_events
+Leipzig::District.new(key).find_streets
+```
 
 ## Running the tests
 
@@ -59,19 +63,10 @@ $ bundle
 $ API_KEY='my-key' rake
 ```
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch
-3. Write code and tests
-4. Check tests
-5. Commit your changes if tests pass
-6. Push to the branch
-7. Create new Pull Request
-
 ## Todo
 
 * Refactoring
+* Doc blocks
 * Maybe model layer instead of OpenStruct?
 
 ## License
