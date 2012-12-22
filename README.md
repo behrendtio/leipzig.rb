@@ -71,7 +71,6 @@ $ API_KEY='my-key' rake
 
 ## Todo
 
-* Support for whole API and all available resources
 * Refactoring
 * Maybe model layer instead of OpenStruct?
 

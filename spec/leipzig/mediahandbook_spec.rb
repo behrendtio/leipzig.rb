@@ -17,6 +17,12 @@ describe 'Mediahandbook' do
   end
 
   it 'returns json representation of resource with default limit' do
+    data = client.find_companies
+    data.should be_instance_of(Array)
+    data.size.should eq(10)
+  end
+
+  it 'returns json representation of resource with given limit' do
     data = client.find_companies(:limit => LIMIT)
     data.should be_instance_of(Array)
     data.size.should eq(LIMIT)
