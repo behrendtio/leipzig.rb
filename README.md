@@ -72,6 +72,7 @@ $ API_KEY='my-key' API_TYPE='real' rake spec
 ## Todo
 
 * Refactoring
+* Configure travis CI
 
 ## License
 
