@@ -56,15 +56,22 @@ Leipzig::District.new(key).find_streets
 
 ## Running the tests
 
+One can choose to run either the fake specs or the real world specs, whereas the latter ones actually calling the
+API:
+
 ```bash
 $ bundle
-$ API_KEY='my-key' rake
+
+$ # Mocked API (default)
+$ rake spec
+
+$ # Real world API
+$ API_KEY='my-key' API_TYPE='real' rake spec
 ```
 
 ## Todo
 
 * Refactoring
-* Maybe model layer instead of OpenStruct?
 
 ## License
 

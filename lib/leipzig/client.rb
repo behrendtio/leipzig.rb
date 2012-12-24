@@ -34,11 +34,9 @@ module Leipzig
     # @return [Array] Result set of `request` method
     def find(type, conditions = {})
       raise "Type #{type} is invalid" unless types.include?(type.to_sym)
-      uri = "#{API_URL}/#{resource}/#{type}"
 
-      if has_search_param?(conditions)
-        uri += '/search'
-      end
+      uri = "#{API_URL}/#{resource}/#{type}"
+      uri += '/search' if includes_search_param?(conditions)
 
       request(uri, conditions)
     end
@@ -47,7 +45,7 @@ module Leipzig
     #
     # @param [Hash] Conditions to check
     # @return [Boolean] True if search param was found
-    def has_search_param?(conditions)
+    def includes_search_param?(conditions)
       conditions.keys.select { |key| !KEYWORDS.include?(key) }.any?
     end
 
@@ -76,7 +74,7 @@ module Leipzig
     def request(uri, conditions)
       result = JSON.parse RestClient.get(uri, :params => @conditions.merge(conditions))
 
-      if result.has_key? "error"
+      if result.has_key? 'error'
         raise "API returned error for uri '#{uri}': #{result['error']}"
       end
 
