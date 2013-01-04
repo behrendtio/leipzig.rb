@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.org/mbehrendt/leipzig.rb.png?branch=master)](https://www.travis-ci.org/mbehrendt/leipzig.rb)
+
 # Leipzig
 
 Tiny client for [API Leipzig](http://www.apileipzig.de)
