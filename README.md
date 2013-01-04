@@ -54,6 +54,8 @@ Leipzig::Calendar.new(key).find_events
 Leipzig::District.new(key).find_streets
 ```
 
+_NOTE_: Works with both ruby 1.9.2 and ruby 1.9.3
+
 ## Running the tests
 
 One can choose to run either the fake specs or the real world specs, whereas the latter ones actually calling the
@@ -72,7 +74,6 @@ $ API_KEY='my-key' API_TYPE='real' rake spec
 ## Todo
 
 * Refactoring
-* Configure travis CI
 
 ## License
 
