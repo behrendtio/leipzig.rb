@@ -1,4 +1,4 @@
-[![Build Status](https://www.travis-ci.org/mbehrendt/leipzig.rb.png?branch=master)](https://www.travis-ci.org/mbehrendt/leipzig.rb)
+[![Build Status](https://www.travis-ci.org/mbehrendt/leipzig.rb.png?branch=master)](https://www.travis-ci.org/mbehrendt/leipzig.rb) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbehrendt/leipzig.rb)
 
 # Leipzig
 
