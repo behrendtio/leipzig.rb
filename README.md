@@ -1,4 +1,5 @@
-[![Build Status](https://www.travis-ci.org/mbehrendt/leipzig.rb.png?branch=master)](https://www.travis-ci.org/mbehrendt/leipzig.rb) [![Dependency Status](https://gemnasium.com/mbehrendt/leipzig.rb.png)](https://gemnasium.com/mbehrendt/leipzig.rb) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbehrendt/leipzig.rb)
+[![Build
+Status](https://www.travis-ci.org/mbehrendt/leipzig.rb.png?branch=master)](https://www.travis-ci.org/behrendtio/leipzig.rb) [![Dependency Status](https://gemnasium.com/behrendtio/leipzig.rb.png)](https://gemnasium.com/mbehrendt/leipzig.rb) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbehrendt/leipzig.rb)
 
 # Leipzig
 
